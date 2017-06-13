@@ -17,7 +17,7 @@ as is `EraseInLine()`.
 There's a series of helpers for colourising strings, there's two variants
 for each colour:
 
-```
+``` go
 term.Red("Hello World")
 term.Redf("Hello %s", "World")
 ```
@@ -25,13 +25,13 @@ term.Redf("Hello %s", "World")
 ### Output and formatting
 
 Action(actionName string, msg string)
-* **Info**, **Infof** Outputs text in the default colour.
-* **Action**, **Actionf** Outputs a action name, and a msg. The name will be
+* `Info`, `Infof` Outputs text in the default colour.
+* `Action`, `Actionf` Outputs a action name, and a msg. The name will be
 bright green and right aligned, the msg will be left aligned and the default colour.
-* **Warn**, **Warnf** Will display the word "WARNING" in yellow, and the msg in
+* `Warn`, `Warnf` Will display the word "WARNING" in yellow, and the msg in
 the default colour.
-* **Error**, **Errorf** WIll displays the word "ERROR" in red, and the msg in
+* `Error`, `Errorf` WIll displays the word "ERROR" in red, and the msg in
 the default colour.
-* **List** Displays an array of items as a multi-column list, using the desired
+* `List` Displays an array of items as a multi-column list, using the desired
 number of columns. The column width must be supplied.
-* **Table** Displays a set of data in a table, with an optional header.
+* `Table` Displays a set of data in a table, with an optional header.
